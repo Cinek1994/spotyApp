@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body-app {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body-app .cont-body {
+  padding: 2% 0;
+  position: relative;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-app .cont-body .topbar {
+  position: relative;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px 10px;
+  background-color: #dedede;
+  margin-bottom: 30px;
+}
+
+.body-app .cont-body .topbar .search-in {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-app .cont-body .topbar .search-in input {
+  max-width: 350px;
+  width: 100%;
+}
+
+.body-app .cont-body .topbar .search-in button {
+  width: 120px;
+  border: 2px solid #8d8d8d;
+  border-radius: 20px;
+  background-color: #8d8d8d;
+  color: #dedede;
+  font-weight: 600;
+}
+
+.body-app .cont-body .content-list {
+  width: 100%;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.body-app .cont-body .content-list .title-content {
+  padding: 10px 30px;
+}
+
+.body-app .cont-body .content-list .list-belt {
+  width: 100%;
+  position: relative;
+}
+
+.body-app .cont-body .content-list .list-belt .list {
+  overflow-x: auto;
+  position: relative;
+  display: flex;
+  padding: 30px;
+}
+
+.body-app .cont-body .content-list .list-belt .list .item {
+  width: 100%;
+  min-width: 250px;
+  max-width: 350px;
+  height: 320px;
+  padding: 10px;
+  box-shadow: 0 0 10px #8d8d8d;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.body-app .cont-body .content-list .list-belt .list .item .img-item {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-app .cont-body .content-list .list-belt .list .item .img-item img {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
 }
